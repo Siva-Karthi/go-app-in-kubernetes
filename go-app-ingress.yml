@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: go-app-ingress
+  annotations:
+spec:
+  rules:
+  - host: kube.local
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: go-web-service
+          servicePort: 3000
