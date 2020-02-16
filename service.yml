@@ -4,8 +4,6 @@ kind: Service
 metadata:
   name: go-web-service
 spec:
-  selector:
-    app: go-web-service
   ports:
   - name: http
     port: 3000 

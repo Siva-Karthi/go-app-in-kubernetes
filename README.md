@@ -12,6 +12,9 @@ sudo kubectl apply -f go-app-ingress.yml
 
 echo "$(sudo minikube ip) kube.local" | sudo tee -a /etc/hosts
 
+Access the service as mentioned below
+http://kube.local/
+
 Running using helm
 helm init
 helm install --name k8s-demo ./mychart --set service.type=NodePort
